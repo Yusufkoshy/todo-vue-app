@@ -1,24 +1,9 @@
-# todo-task
+# created todo app using Vuejs
 
-## Project setup
-```
-yarn install
-```
+*the app created to add todos and easily removed them*
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+used languages and frameworks :
+ *(Html, css ,JavaScript ,)*
 
-### Compiles and minifies for production
-```
-yarn build
-```
+*(Vuejs , Tailwind ,postcss(pre processor) ,)*
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
