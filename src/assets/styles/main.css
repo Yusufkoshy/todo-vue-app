@@ -1,0 +1,81 @@
+ @tailwind preflight;
+ @tailwind components;
+ @tailwind utilities;
+
+/* Start Global styles*/
+ :root {
+     --bg-color:#192a56;
+ }
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+.font__roborto {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* End Global styles*/
+
+/* Start input styles*/
+
+input::placeholder {
+   color: blue;
+   font-family: 'Dancing Script', cursive;
+}
+/* End input styles*/
+
+/* Start App styles*/
+
+.container {
+    box-shadow: 0 0 4px 3px #edf8ff;
+}
+
+.todo__ul {
+}
+
+.todo__item {
+    background-color: #f7fcff;
+    transition: 0.4s ease;
+    box-sizing: border-box;
+    cursor: pointer; 
+    position: relative;
+}
+
+.button:hover {
+    box-shadow: 0 0 4px 3px #edf8ff;
+}
+
+.todo__item:hover {
+    box-shadow: 0 0 4px 3px #edf8ff;
+}
+
+.delete__button {
+    background-image: url(../images/Ic_delete_48px.svg.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    transform: rotate(70deg);
+    @apply w-1;
+    max-width: 2em;
+}
+
+li:hover .delete__button {
+    opacity: 1; 
+    transform: rotate(0deg);
+    @apply w-6;
+}
+
+.todo__item span {
+    font-family: 'Roboto', sans-serif;
+}
+/* End App styles*/
